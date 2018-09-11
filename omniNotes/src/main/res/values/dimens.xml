@@ -56,9 +56,9 @@
     <dimen name="navigation_bar_width">42dp</dimen>
     
     <!-- Notes layout in list -->
-    <dimen name="note_item_min_height">102dp</dimen>
-    <dimen name="note_item_min_height_inner">100dp</dimen>
-    <dimen name="note_item_min_height_reduced">71dp</dimen>
+    <dimen name="note_item_min_height">152dp</dimen>
+    <dimen name="note_item_min_height_inner">150dp</dimen>
+    <dimen name="note_item_min_height_reduced">100dp</dimen>
 
     <!-- Attachment dialog -->
     <dimen name="attachment_dialog_text_size">16sp</dimen>

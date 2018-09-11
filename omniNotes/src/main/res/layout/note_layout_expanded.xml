@@ -19,7 +19,7 @@
     xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/note_item_min_height"
+    android:layout_height="wrap_content"
     android:paddingBottom="2dp"
     android:background="@drawable/bg_card">
 
@@ -33,7 +33,7 @@
 
         <View
             android:id="@+id/category_marker"
-            android:layout_width="7dp"
+            android:layout_width="3dp"
             android:minHeight="@dimen/note_item_min_height_inner"
             android:layout_height="match_parent"
             android:background="@null" />
@@ -63,8 +63,7 @@
             <com.neopixl.pixlui.components.textview.TextView
                 android:id="@+id/note_content"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:maxLines="@integer/textview_max_lines_expanded"
                 android:textAppearance="@style/Text.Normal"
