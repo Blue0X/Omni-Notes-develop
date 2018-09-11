@@ -198,7 +198,8 @@
   <string name="permission_coarse_location">位置权限用于在您的记事中加入位置信息</string>
   <string name="permission_not_granted">权限未被授予</string>
   <string name="checklist">待办事项列表</string>
-  <string name="text_note">文本注释</string>
+  <string name="text_note">文本笔记</string>
+  <string name="text_note_paste">从剪贴板创建</string>
   <string name="photo">照片</string>
   <string name="uncompleted_checklists">Incompleted checklists</string>
   <string name="info">信息</string>

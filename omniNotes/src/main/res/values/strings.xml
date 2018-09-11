@@ -215,6 +215,7 @@
     <string name="permission_not_granted">Permission not granted</string>
     <string name="checklist">Checklist</string>
     <string name="text_note">Text note</string>
+    <string name="text_note_paste">Paste from clipboard</string>
     <string name="photo">Photo</string>
     <string name="uncompleted_checklists">Incompleted checklists</string>
     <string name="info">Info</string>

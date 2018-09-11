@@ -93,6 +93,7 @@ public class Fab {
 
         fab.findViewById(R.id.fab_checklist).setOnClickListener(onClickListener);
         fab.findViewById(R.id.fab_camera).setOnClickListener(onClickListener);
+        fab.findViewById(R.id.fab_clipboard).setOnClickListener(onClickListener);
 
         if (!expandOnLongClick) {
             View noteBtn = fab.findViewById(R.id.fab_note);

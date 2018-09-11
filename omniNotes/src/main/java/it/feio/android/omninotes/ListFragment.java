@@ -21,6 +21,9 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.SearchManager;
+import android.content.ClipData;
+import android.content.ClipDescription;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -234,6 +237,16 @@ public class ListFragment extends BaseFragment implements OnViewTouchedListener,
                     break;
                 case R.id.fab_note:
                     editNote(new Note(), v);
+                    break;
+                case R.id.fab_clipboard:
+                    Note aNote = new Note();
+                    ClipboardManager clipboard = (ClipboardManager) mainActivity.getSystemService(Context.CLIPBOARD_SERVICE);
+                    if (clipboard.hasPrimaryClip()) {
+                        ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
+                        CharSequence chars = item.getText();
+                        aNote.setContent(chars != null ? chars.toString() : "");
+                    }
+                    editNote(aNote, v);
                     break;
                 case R.id.fab_camera:
                     Intent i = mainActivity.getIntent();

@@ -54,6 +54,16 @@
         fab:fab_title="@string/checklist"/>
 
     <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_clipboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/ic_file_document_box_white_48dp"
+        fab:fab_colorNormal="@color/colorBlue"
+        fab:fab_colorPressed="@color/colorBlueDark"
+        fab:fab_size="mini"
+        fab:fab_title="@string/text_note_paste"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
